@@ -21,7 +21,7 @@ function guessinggame {
                 elif [[ $try -gt $cnt_fls ]]
                         echo "your guess is too high, please try again"
                 else
-                        echo "Congratulations! your guess is correct"
+                        echo "your guess is correct"
                         break;
                 fi
         done
