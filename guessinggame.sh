@@ -6,4 +6,25 @@
 # The program should contain at least one function, one loop, and one if statement.
 # The program should be more than 20 lines of code but less than 50 lines of code.
 
+function guessinggame {
+        cnt_fls=$( ls -1 | ls -l)
 
+        while true;
+        do
+                echo ""
+                echo "try and say how many files in the current directory?
+                read try
+
+                if [[$try -lt $cnt_fls ]]
+                then
+                        echo "Your guess is too low, please try again"
+                elif [[ $try -gt $cnt_fls ]]
+                        echo "your guess is too high, please try again"
+                else
+                        echo "Congratulations! your guess is correct"
+                        break;
+                fi
+        done
+}
+
+guessinggame
